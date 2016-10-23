@@ -14,12 +14,6 @@
 #define RAISE 3
 #define ADJUST 16
 
-enum preonic_keycodes {
-  QWERTY = SAFE_RANGE,
-  FN,
-  LOWER,
-  RAISE,
-};
 
 // Fillers to make layering more clear
 #define _______ KC_TRNS
