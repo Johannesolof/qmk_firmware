@@ -34,20 +34,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Planck PCB default pin-out */
 #define MATRIX_ROW_PINS { B1, F7, F6, F5, F4 }
-#define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4, D0, D1, D2, D3, B2, B3
-B3, B2, D3, D2, D1, D4, D0, C6, D7, E6, B4, B5 }
-#define UNUSED_PINS { B6, B2, B0, D5 }
-
-#define BACKLIGHT_PIN B7
+#define MATRIX_COL_PINS { B3, B2, D3, D2, D1, D4, D0, C6, D7, E6, B4, B5 }
+#define UNUSED_PINS 
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
-
-/* number of backlight levels */
-#define BACKLIGHT_LEVELS 3
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCING_DELAY 5
@@ -57,18 +51,6 @@ B3, B2, D3, D2, D1, D4, D0, C6, D7, E6, B4, B5 }
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-/* key combination for command */
-#define IS_COMMAND() ( \
-    keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
-)
-
-/* ws2812 RGB LED */
-#define RGB_DI_PIN D1
-#define RGBLIGHT_TIMER
-#define RGBLED_NUM 28     // Number of LEDs
-#define RGBLIGHT_HUE_STEP 10
-#define RGBLIGHT_SAT_STEP 17
-#define RGBLIGHT_VAL_STEP 17
 
 /*
  * Feature disable options
